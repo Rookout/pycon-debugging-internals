@@ -1,0 +1,26 @@
+PYTHON
+__________
+                                       Empty Vanilla Bdb	    Simple Vanilla Bdb
+
+No engine	                           0.08805260062	        0.1799218953
+Engine no hook	                       10.99140581	            67.91512328
+Engine + hook in different file	       55.27000433	            119.8988984
+Engine + hook in same file	           11.75641012	            68.41585183
+
+
+
+PYPY
+__________
+
+Testing without engine
+Empty method time was: 0.00153738260269
+Pass method time was: 0.013411462307
+Testing with engine but no hooks
+Empty method time was: 0.441592335701
+Pass method time was: 12.017665267
+Testing with engine and hook in different file
+Empty method time was: 20.6688397527
+Pass method time was: 34.8283005357
+Testing with engine and hook in same file
+Empty method time was: 6.06792831421
+Pass method time was: 17.8652561903

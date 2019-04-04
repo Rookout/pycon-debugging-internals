@@ -1,0 +1,26 @@
+PYTHON
+_______
+
+Testing without tracer
+Empty method time was: 0.0891481041908
+Pass method time was: 0.181433916092
+Testing with tracer in different file
+Empty method time was: 0.34086561203
+Pass method time was: 1.85390102863
+Testing with tracer in same file
+Empty method time was: 0.363246321678
+Pass method time was: 1.90423619747
+
+
+PYPY
+_______
+
+Testing without tracer
+Empty method time was: 0.0015110373497
+Pass method time was: 0.0131765604019
+Testing with tracer in different file
+Empty method time was: 0.0135508179665
+Pass method time was: 0.0136326551437
+Testing with tracer in same file
+Empty method time was: 0.0150479674339
+Pass method time was: 0.0169935822487

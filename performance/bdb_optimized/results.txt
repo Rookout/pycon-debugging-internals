@@ -1,0 +1,33 @@
+PYTHON
+_______
+
+Testing without engine
+Empty method time was: 0.0893102288246
+Pass method time was: 0.18672811985
+Testing with engine but no hooks
+Empty method time was: 0.289680600166
+Pass method time was: 1.85588985682
+Testing with engine and hook in different file
+Empty method time was: 0.40623652935
+Pass method time was: 1.97396248579
+Testing with engine and hook in same file
+Empty method time was: 2.24451225996
+Pass method time was: 20.4024297595
+
+
+
+PYPY
+______
+
+Testing without engine
+Empty method time was: 0.00161427259445
+Pass method time was: 0.013571023941
+Testing with engine but no hooks
+Empty method time was: 0.0145461559296
+Pass method time was: 0.0164260268211
+Testing with engine and hook in different file
+Empty method time was: 0.0344865918159
+Pass method time was: 0.0201717615128
+Testing with engine and hook in same file
+Empty method time was: 0.148714244366
+Pass method time was: 0.389207661152
