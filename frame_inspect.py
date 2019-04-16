@@ -1,15 +1,26 @@
 import inspect
 
-def a():
-  print 'in a()'
+def no_vars():
+  print "local vars:", inspect.currentframe().f_locals
+
+
+def has_vars():
   mystr = "mystr"
-  frame = inspect.currentframe()
-  print "local vars:", frame.f_locals
   mydict = {"mykey": "myvalue"}
   mylist = [1, 2, 3]
-  frame = inspect.currentframe()
-  print "local vars:", frame.f_locals
-  print "frame info:", inspect.getframeinfo(frame)
-  return mystr * 2
+  print "local vars:", inspect.currentframe().f_locals
 
-a()
+
+def frameinfo():
+  frame = inspect.currentframe()
+  print "frame info:", inspect.getframeinfo(frame)
+
+
+print "no vars"
+no_vars()
+
+print "has vars"
+has_vars()
+
+print "frameinfo"
+frameinfo()
