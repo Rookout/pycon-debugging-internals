@@ -9,14 +9,17 @@ def simple_tracer(frame, event, arg):
           .format(event, func_name, line_no, filename))
     return simple_tracer
 
-def b():
-    print 'in b()'
-    return 'response_from_b' 
 
 def a():
     print 'in a()'
     val = b()
     return val * 2
+
+    
+def b():
+    print 'in b()'
+    return 'response_from_b' 
+
 
 if __name__ == '__main__':
     sys.settrace(simple_tracer)
