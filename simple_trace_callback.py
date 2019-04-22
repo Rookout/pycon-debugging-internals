@@ -11,14 +11,11 @@ def simple_tracer(frame, event, arg):
 
 
 def a():
-    print 'in a()'
-    val = b()
-    return val * 2
+    return b() * 2
 
     
 def b():
-    print 'in b()'
-    return 'response_from_b' 
+    return 'response_from_b'
 
 
 if __name__ == '__main__':
