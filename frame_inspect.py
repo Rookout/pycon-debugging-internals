@@ -1,26 +1,26 @@
 import inspect
 
-def no_vars():
-  print "local vars:", inspect.currentframe().f_locals
+def test_no_vars():
+  print(inspect.currentframe().f_locals)
 
 
-def has_vars():
+def test_vars():
   mystr = "mystr"
   mydict = {"mykey": "myvalue"}
   mylist = [1, 2, 3]
-  print "local vars:", inspect.currentframe().f_locals
+  print(inspect.currentframe().f_locals)
 
 
-def frameinfo():
+def test_frameinfo():
   frame = inspect.currentframe()
-  print "frame info:", inspect.getframeinfo(frame)
+  print(inspect.getframeinfo(frame))
 
 
-print "no vars"
-no_vars()
+print("no vars")
+test_no_vars()
 
-print "has vars"
-has_vars()
+print("has vars")
+test_vars()
 
-print "frameinfo"
-frameinfo()
+print("frameinfo")
+test_frameinfo()
